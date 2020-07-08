@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  notesandsnippets.api:
+    image: ${DOCKER_REGISTRY-}notesandsnippetsapi
+    build:
+      context: .
+      dockerfile: NotesAndSnippets.Api/Dockerfile
